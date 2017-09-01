@@ -8,8 +8,14 @@ https://en.wikipedia.org/wiki/Tetris:_The_Grand_Master
 Controls are,
 
 Instant drop: w
+
 Move left: a
+
 Move right: d
+
 Move down: s
+
 Rotate left: j
+
 Rotate right: k
+
