@@ -1,7 +1,7 @@
 # tetris
 
 ![tetrispicture](https://user-images.githubusercontent.com/26101774/29991307-87c05240-8f39-11e7-83f2-f53b41d29f76.png)
-
+![tetrisnotes](https://user-images.githubusercontent.com/26101774/29991558-0616f7b2-8f3e-11e7-8808-fa5fdf89461b.png)
 
 This project is an ASCII based tetris game that I built during a programming class, when I should have been doing my programming assignments. This version of tetris was modeled after Tetris: The grand master (TGM) by Arika.
 
