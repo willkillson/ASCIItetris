@@ -45,18 +45,6 @@ int main(void) {
 	}
 	place_piece(board, &current);
 
-	//test
-
-	//for (j = 1; j < 10; j++) {
-	//	board[24][j] = block;
-	//}
-
-
-
-	//test
-
-
-
 	//main game loop///////////////////////
 
 

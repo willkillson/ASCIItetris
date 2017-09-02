@@ -74,51 +74,7 @@ void print_board(char board[bHEIGHT][bWIDTH], piece *x, int *score, int time, in
 			if (m == 9) {
 				printf("\t\t\tTEST 2 - %d\t\t\t\t\t", x->test2);
 			}
-			//if (m == 10) {
-			//	printf("\t\t\t%d\t", line[10]);
-			//}
-			//if (m == 11) {
-			//	printf("\t\t\t%d\t", line[11]);
-			//}
-			//if (m == 12) {
-			//	printf("\t\t\t%d\t", line[12]);
-			//}
-			//if (m == 13) {
-			//	printf("\t\t\t%d\t", line[13]);
-			//}
-			//if (m == 14) {
-			//	printf("\t\t\t%d\t", line[14]);
-			//}
-			//if (m == 15) {
-			//	printf("\t\t\t%d\t", line[15]);
-			//}
-			//if (m == 16) {
-			//	printf("\t\t\t%d\t", line[16]);
-			//}
-			//if (m == 17) {
-			//	printf("\t\t\t%d\t", line[17]);
-			//}
-			//if (m == 18) {
-			//	printf("\t\t\t%d\t", line[18]);
-			//}
-			//if (m == 19) {
-			//	printf("\t\t\t%d\t N col  = %d", line[19], x->N);
-			//}
-			//if (m == 20) {
-			//	printf("\t\t\t%d\t S col = %d", line[20], x->S);
-			//}
-			//if (m == 21) {
-			//	printf("\t\t\t%d\t E col = %d", line[21], x->E);
-			//}
-			//if (m == 22) {
-			//	printf("\t\t\t%d\t W col = %d",line[22], x->W);
-			//}
-			//if (m == 23) {
-			//	printf("\t\t\t%d\t piece rotation = %d",line[23], x->rotation);
-			//}
-			//if (m == 24) {
-			//	printf("\t\t\t%d\t piece rotation = %d",line[24], x->rotation);
-			//}
+		
 			m++;
 		}
 	}
@@ -151,22 +107,8 @@ void shift_stack(char board[][bWIDTH], int line[bHEIGHT]) {
 	int i = 0;
 	int j = 0;
 	int k = 0;
-	int l = 0;
 	int zero = 0;
 	int one = 1;
-	int poop = 0;
-	int r = 0;
-	int c = 0;
-
-
-	//for(i=1;i<26;i++){
-	//	if (line[i] == 10) {
-	//		for (j = 1; j < 11; j++) {
-	//			board[i][j] = empty;
-	//		}
-	//		l++;//counts how many times the stack needs to drop down
-	//	}
-	//}
 
 	for (i = 0; i < 25; i++) {
 		if (line[i] == 10) {
@@ -188,57 +130,12 @@ void shift_stack(char board[][bWIDTH], int line[bHEIGHT]) {
 		}
 	}
 
-
-
-	//for (i = 1; i<26; i++) {
-	//	if (line[i] == 10) {
-	//		for (j = 1; j < 11; j++) {
-	//			board[i - 1][j] = board[i - 2][j];
-	//			board[i - 2][j] = empty;
-	//		}
-	//	}
-	//}
-	//for (i = 1; i<26; i++) {
-	//	if (line[i] == 10) {
-	//		for (j = 1; j < 11; j++) {
-	//			board[i - 2][j] = board[i - 3][j];
-	//			board[i - 3][j] = empty;
-	//		}
-	//	}
-	//}
-	//for (i = 1; i<26; i++) {
-	//	if (line[i] == 10) {
-	//		for (j = 1; j < 11; j++) {
-	//			board[i - 2][j] = board[i - 3][j];
-	//			board[i - 3][j] = empty;
-	//		}
-	//	}
-	//}
-
-
-
-
-	//for (j = 1; j < 11; j++) {
-	//	board[point-1][j] = board[point - 2][j];
-	//}
-
 }
 void score_board(char board[bHEIGHT][bWIDTH], piece *x, int *score, int line[bHEIGHT]) {
 
 	int i = 0;
 	int j = 0;
-	int n = 0;
-	int m = 0;
-	int k = 0;
-	int r = 0;
 	int c = 0;
-	int boobs = *score;
-	int op = 0;
-	int opa = 0;
-
-
-
-
 
 	while (x->set == 1) {// copy x->position into board
 		for (i = 0; i < bHEIGHT; i++) {
@@ -264,44 +161,6 @@ void score_board(char board[bHEIGHT][bWIDTH], piece *x, int *score, int line[bHE
 
 	shift_stack(board, line);
 
-
-
-
-	//	for (i = 0; i < bHEIGHT; i++) {
-	//		for (j = 0; j < bWIDTH; j++) {
-	//			if (board[i][j] == block) {
-	//				k++;
-	//			}
-	//		}
-	//		if (k == 10) {
-
-
-
-	//			for (j = 1; j < bWIDTH-1; j++) {
-	//				
-	//				board[i][j] = empty;
-	//			}
-	//			boobs++;
-	//			for (r = 24; r >= 4; r--) {
-	//				for (c = 10; c >= 1; c--) {
-	//					if( (board[r][c] == block)&&(board[r+1][c]==empty)) {
-	//						board[r][c] = empty;
-	//						board[r + 1][c] = block;
-
-	//					}
-	//				}
-	//			}
-	//			
-	//			
-	//	
-
-	//		}
-
-	//		k = 0;
-	//	}
-
-	//*score =  boobs;
-
 }
 void place_piece(char board[][bWIDTH], piece *x) {
 
@@ -309,9 +168,6 @@ void place_piece(char board[][bWIDTH], piece *x) {
 
 
 	type = (rand() % 7);
-	//type = 5;
-
-
 
 	if (type == 0) {
 		//drawing an I piece in vertical poistion 0
